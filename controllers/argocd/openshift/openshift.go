@@ -112,6 +112,17 @@ func getPolicyRuleForApplicationController() []rbacv1.PolicyRule {
 		},
 		{
 			APIGroups: []string{
+				"argoproj.io",
+			},
+			Resources: []string{
+				"*",
+			},
+			Verbs: []string{
+				"*",
+			},
+		},
+		{
+			APIGroups: []string{
 				"monitoring.coreos.com",
 			},
 			Resources: []string{
